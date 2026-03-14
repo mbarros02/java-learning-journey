@@ -1,4 +1,26 @@
 package poo_orders_system;
 
-public class Orders {
+import java.util.ArrayList;
+
+public class Orders extends Register implements Base<Orders>{
+
+    public Orders(int id, String description, ArrayList<Register> list,
+                  String nome, double value) {
+        super(id, description, list, nome, value);
+    }
+
+    @Override
+    public Orders register() {
+        return null;
+    }
+
+    @Override
+    public Orders update() {
+        return null;
+    }
+
+    @Override
+    public void list() {
+
+    }
 }

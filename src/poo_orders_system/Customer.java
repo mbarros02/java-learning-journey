@@ -1,6 +1,6 @@
 package poo_orders_system;
 
-public class Customer extends Register{
+public class Customer extends Register implements Base<Customer>{
 
     private String email;
     private String sexo;
@@ -27,5 +27,20 @@ public class Customer extends Register{
 
     public String getSexo() {
         return sexo;
+    }
+
+    @Override
+    public Customer register() {
+        return null;
+    }
+
+    @Override
+    public Customer update() {
+        return null;
+    }
+
+    @Override
+    public void list() {
+
     }
 }

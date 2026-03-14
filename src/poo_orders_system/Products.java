@@ -1,25 +1,25 @@
 package poo_orders_system;
 
-public class Products extends Register{
+import java.util.ArrayList;
 
-    private String description;
-    private double value;
+public class Products extends Register implements Base<Products>{
 
-    public Products(int id, String nome, String description, double value) {
-        super(id, nome);
-        this.description = description;
-        this.value = value;
+    public Products(int id, String description, ArrayList<Register> list, String nome, double value) {
+        super(id, description, list, nome, value);
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    @Override
+    public Products register() {
+        return null;
     }
 
-    public String getDescription() {
-        return description;
+    @Override
+    public Products update() {
+        return null;
     }
 
-    public double getValue() {
-        return value;
+    @Override
+    public void list() {
+
     }
 }
