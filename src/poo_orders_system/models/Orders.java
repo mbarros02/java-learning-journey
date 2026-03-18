@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Orders extends Register implements Base<Orders>{
 
-    public Orders(int id, String description, ArrayList<Register> list,
+    public Orders(int id, String description,
                   String nome, double value) {
-        super(id, description, list, nome, value);
+        super(id, description, nome, value);
     }
 
     @Override

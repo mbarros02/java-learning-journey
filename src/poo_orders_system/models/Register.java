@@ -8,7 +8,7 @@ public class Register {
     private String nome;
     private String description;
     private double value;
-    private ArrayList<Register> list;
+    private ArrayList<Register> list = new ArrayList<>();
 
     public Register(int id, String nome) {
         this.id = id;
@@ -16,7 +16,7 @@ public class Register {
         this.list = new ArrayList<>();
     }
 
-    public Register(int id, String description, ArrayList<Register> list, String nome, double value) {
+    public Register(int id, String description, String nome, double value) {
         this.id = id;
         this.description = description;
         this.list = list;
