@@ -1,4 +1,4 @@
-package poo_orders_system;
+package poo_orders_system.models;
 
 import java.util.ArrayList;
 
